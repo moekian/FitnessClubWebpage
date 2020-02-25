@@ -1,0 +1,78 @@
+/* styles for body element */
+body {
+  background-color: #ffff99;
+}
+
+/* styles for teh container id */
+#container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* styles for the header section */
+header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 12px 12px 12px #404040;
+}
+
+/* styles for the nav element */
+nav {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border-top: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+}
+
+/* styles for the main div */
+main {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 12px 12px 12px #404040;
+}
+/* footer styles */
+footer {
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* styles for teh equip class */
+.equip {
+  float: left;
+  margin-right: 20px;
+}
+
+/* clear float for the heading cvoming after equip classs that is float left */
+/* h1 {
+  clear: left;
+} */
+
+/* styles for teh unordered list */
+ul {
+  margin-bottom: 50px;
+  list-style-position: inside;
+}
+
+/* styles for teh description term */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 20px;
+}
