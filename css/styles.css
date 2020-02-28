@@ -95,7 +95,7 @@ footer {
 
 /* Media Query for teh tablet view port targets screen only */
 /* minimum width is 481px */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 685px) {
   /* styles specifies teh horizontal display for the nav li */
   nav li {
     display: inline;
@@ -105,6 +105,7 @@ footer {
     padding-left: 0;
     padding-right: 0;
     width: 18%;
+    white-space: nowrap;
   }
 
   /* styles for the main */
@@ -147,6 +148,92 @@ footer {
     font-weight: bold;
     margin-top: .7em;
   }
+}
+
+/* Media query for desktop width size */
+@media only screen and (min-width: 860px) {
+  /* styles for teh container div */
+  #container {
+    width: 80%;
+  }
+
+  /* styles for ul in nav */
+  nav ul {
+    margin: 0;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  }
+
+  /* styles for teh li in nav */
+  nav li {
+    border-radius: 0;
+    border-top: solid #000000;
+    border-bottom: solid #000000;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 20%;
+  }
+
+  /* styles for the links in the nav */
+  nav li a {
+    display: inline-block;
+    padding: 0.7em;
+  }
+
+  /* styles for teh main element */
+  main {
+    border-style: none;
+    box-shadow: 0.5em 0.5em 0.5em #404040;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  /* styles for the paragraphs inside main element */
+  main p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  /* styles for teh item class */
+  .items {
+    margin-bottom: 7em;
+  }
+
+  /* styles for h1 in main */
+  /* main h1 {
+    clear: left;
+  } */
+
+  /* adding pseudo class for the links */
+  nav li a:hover {
+    color: #ffff00;
+    font-style: italic;
+  }
+
+  nav li a:link {
+    color: #ffffff;
+  }
+
+  nav li a:visited {
+    color: #ffff99;
+  }
+
+  /* styles for the gradients */
+  body {
+    /* mozilla */
+    background: -moz-linear-gradient(#ffffff, #ffff99);
+    /* opera */
+    background: -o-linear-gradient(#ffffff, #ffff99);
+    /* safari and chrome */
+    background: -webkit-linear-gradient(#ffffff, #ffff99);
+    /* add for other browsers */
+    background: linear-gradient(#ffffff, #ffff99);
+  }
+
+
+
+
 
 
 
