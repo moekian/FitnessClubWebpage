@@ -2,7 +2,7 @@
 
 /* styles for body element */
 body {
-  background-color: #ffff99;
+  background-color: #1d1d1c;
 }
 
 /* styles for fluid image */
@@ -19,9 +19,6 @@ img {
 
 /* styles for the header section */
 header {
-  margin-top: 0.2em;
-  background-color: #ffffff;
-  border-radius: 0.5em;
   text-align: center;
 }
 
@@ -31,6 +28,7 @@ nav {
   font-size: 1.25em;
   font-weight: bold;
   text-align: center;
+  margin-top: -1.5em;
 }
 
 /* add styles for the unordered list in teh nav */
@@ -42,7 +40,7 @@ nav ul {
 
 /* add style for the list items in the nav */
 nav li {
-  background-color: #009933;
+  background-color: #9d9d93;
   border-radius: 2em;
   list-style-type: none;
   margin: 0.3em;
@@ -71,18 +69,33 @@ main {
   font-size: 1em;
   margin-top: 0.5em;
   padding: 1em;
-  border-radius: 1em;
+  border-radius: 2em 0 2em 0;
   background-color: #ffffff;
-  border-top: solid 0.2em #009933;
-  border-bottom: solid 0.2em #009933;
+  opacity: 0.85;
 }
 /* footer styles */
 footer {
   font-size: 0.7em;
   text-align: center;
   margin-top: 2em;
+  color: #ffffff;
 }
 
+/* styles for anchor tag in main element */
+main a {
+  background-color: #9d9d93;
+  border-radius: 1em;
+  padding: 0.5em;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* styles for anchor tag in footer */
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
 /* styles for teh tablet class */
 .tablet {
   display: none;
@@ -106,12 +119,37 @@ footer {
     padding-right: 0;
     width: 18%;
     white-space: nowrap;
+    border-radius: 0;
+    background-color: transparent;
   }
 
   /* styles for the main */
   main {
     clear: left;
-    margin-top: 4em;
+    /* margin-top: 4em; */
+    border-radius: 0;
+  }
+
+  /* styles for h1 */
+  h1 {
+    text-align: center;
+  }
+
+  /* styles for images in figure */
+  figure img {
+    background-color: #1d1d1c;
+    display: inline;
+    height: 8em;
+    width: 28%;
+    margin: 1%;
+    padding: 1%
+  }
+
+  /* styles for the anchor tag in the figure */
+  figure a {
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none;
   }
 
   /* styles for the mobiole class */
@@ -154,7 +192,7 @@ footer {
 @media only screen and (min-width: 860px) {
   /* styles for teh container div */
   #container {
-    width: 80%;
+    background-color: #1d1d1c;
   }
 
   /* styles for ul in nav */
@@ -166,9 +204,6 @@ footer {
 
   /* styles for teh li in nav */
   nav li {
-    border-radius: 0;
-    border-top: solid #000000;
-    border-bottom: solid #000000;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -179,20 +214,20 @@ footer {
   nav li a {
     display: inline-block;
     padding: 0.7em;
+    text-shadow: 0.2em 0.1em #3d3d35;
   }
 
   /* styles for teh main element */
   main {
-    border-style: none;
-    box-shadow: 0.5em 0.5em 0.5em #404040;
-    margin-bottom: 1em;
-    margin-top: 1em;
+    background-color: #1d1d1c;
   }
 
   /* styles for the paragraphs inside main element */
   main p {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
 
   /* styles for teh item class */
@@ -207,7 +242,7 @@ footer {
 
   /* adding pseudo class for the links */
   nav li a:hover {
-    color: #ffff00;
+    color: #9d9d93;;
     font-style: italic;
   }
 
@@ -216,19 +251,49 @@ footer {
   }
 
   nav li a:visited {
-    color: #ffff99;
+    color: #ccccff;
   }
 
   /* styles for the gradients */
   body {
-    /* mozilla */
-    background: -moz-linear-gradient(#ffffff, #ffff99);
-    /* opera */
-    background: -o-linear-gradient(#ffffff, #ffff99);
-    /* safari and chrome */
-    background: -webkit-linear-gradient(#ffffff, #ffff99);
-    /* add for other browsers */
-    background: linear-gradient(#ffffff, #ffff99);
+    background-color: #ffffff;
+  }
+
+  /* styles for header */
+  header {
+    text-align: left;
+  }
+
+  /* styles for teh nav */
+  nav {
+    float: right;
+    margin-right: 3em;
+    margin-bottom: 0;
+    width: 65%;
+    margin-top: -7em;
+  }
+
+  /* styles for images inside figure element */
+  figure img {
+    height: 15em;
+    opacity: 0.7;
+  }
+
+  /* styles removing transparency */
+  figure img:hover {
+    opacity: 1;
+  }
+
+  /* styles for h1  */
+  h1 {
+    color: #ffffff;
+  }
+
+  /* styles for the footer */
+  footer {
+    background-color: #2a2a2a;
+    margin-top: -0.2em;
+    padding: 2em;
   }
 
 
