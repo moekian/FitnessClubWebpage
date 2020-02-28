@@ -173,12 +173,32 @@ footer a {
   .items {
     display: block;
     list-style-position: inside;
-    margin-bottom: 5em;
   }
 
   /* styles for the tablet class */
   .tablet {
     display: block;
+    margin-top: -3em;
+    margin-bottom: -1em;
+  }
+
+  /* styles fro the section */
+  section {
+    padding-bottom: 3em;
+  }
+
+  /* styles for teh h1 in teh section */
+  section h1 {
+    text-align: left;
+  }
+
+  /* styles for teh anchor tag inside section */
+  section a {
+    background-color: transparent;
+    color: #1d1d1c;
+    font-weight: normal;
+    padding: 0;
+    text-decoration: underline;
   }
 
   /* styles for the dt */
@@ -295,6 +315,24 @@ footer a {
     margin-top: -0.2em;
     padding: 2em;
   }
+
+  /* styles for section */
+  section {
+    color: #ffffff;
+    margin-left: 1em;
+    padding-bottom: 5em;
+  }
+
+  /* styles for teh anchor tag inside section */
+  section a {
+    color: #ffffff;
+  }
+
+  /* styles for tha paragraphs in section */
+  section p {
+    margin-left: 0;
+  }
+
 
 
 
