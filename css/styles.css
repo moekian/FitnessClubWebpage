@@ -132,6 +132,24 @@ form ul {
   display: none;
 }
 
+/* styles for the copyright div */
+#copyright {
+  float: left;
+  margin-top: 2em;
+  width: 80%;
+}
+
+/* styles for the social div */
+#social {
+  float: right;
+  width: 20%;
+}
+
+/* styles for the social media icons */
+/* #social img {
+  padding: 0.5em;
+} */
+
 /* Media Query for teh tablet view port targets screen only */
 /* minimum width is 481px */
 @media only screen and (min-width: 685px) {
@@ -434,6 +452,7 @@ form ul {
     background-color: #2a2a2a;
     margin-top: -0.2em;
     padding: 2em;
+    overflow: auto;
   }
 
   /* styles for section */
