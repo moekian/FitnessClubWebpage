@@ -106,6 +106,32 @@ footer a {
   display: none;
 }
 
+/* styles for the input, textarea, select */
+input, textarea, select {
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* styles for the label */
+label {
+  display: block;
+}
+
+/* styles for the ul in the form */
+form ul {
+  list-style-type: none;
+}
+
+/* styles for the chkbx class */
+.chkbx {
+  display: inline-block;
+}
+
+/* styles for mobile */
+.video {
+  display: none;
+}
+
 /* Media Query for teh tablet view port targets screen only */
 /* minimum width is 481px */
 @media only screen and (min-width: 685px) {
@@ -287,6 +313,19 @@ footer a {
   .flex-container {
     display: flex;
   }
+
+  /* styles for the label */
+  label {
+    float: left;
+    padding-right: 0.5em;
+    width: 10em;
+    text-align: right;
+  }
+
+  /* styles for the btn class */
+  .btn {
+    margin-left: 12em;
+  }
 }
 
 /* Media query for desktop width size */
@@ -442,6 +481,32 @@ footer a {
   /* styles for the caption */
   caption {
     color: #ffffff;
+  }
+
+  /* styles for the form element */
+  form {
+    background-color: #ffffff;
+    padding: 1em;
+  }
+
+  /* styles for paragraphs in form */
+  form p {
+    color: #000000;
+    margin-left: inherit;
+  }
+
+  /* styles for the video */
+  .video {
+    padding: 1em;
+    text-align: center;
+    display: block;
+  }
+
+  /* styles for the video tag */
+  video {
+    border: 0.5em ridge #ffffff;
+    height: auto;
+    max-width: 100%;
   }
 
 }
