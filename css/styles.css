@@ -1,159 +1,213 @@
-/* styles for the Mobile-First Strategy */
-
-/* styles for body element */
+/* stylesheet for the fitness web pages */
+/* styles for the body */
 body {
+  /* background-color: #FFFF99; */
   background-color: #1d1d1c;
 }
 
-/* styles for fluid image */
 img {
   max-width: 100%;
 }
 
-/* styles for teh container id */
+/* styles for mobile layout */
+
+/* styles for the container id */
 #container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* styles for the header section */
 header {
+  /* margin-top: 0.2em;
+  background-color: #fff;
+  border-radius: 0.5em; */
   text-align: center;
 }
 
-/* styles for the nav element */
 nav {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.25em;
   font-weight: bold;
   text-align: center;
   margin-top: -1.5em;
+  /* padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+  border-radius: 20px; */
 }
 
-/* add styles for the unordered list in teh nav */
+/* styles regarding ul iinside nav */
+
+
 nav ul {
   padding: 0;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
-/* add style for the list items in the nav */
+/* styles for the li in the ul in the nav */
 nav li {
+  /* background-color: #009933; */
   background-color: #9d9d93;
-  border-radius: 2em;
-  list-style-type: none;
   margin: 0.3em;
   padding: 0.4em;
+  border-radius: 2em;
+  list-style-type: none;
 }
 
-/* add styles fro teh anchor tag inside the li */
+/* styles for the anchor elements inside the li inside nav */
 nav li a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
-/* add styles for teh mobile class */
+/* styles to display mobile class */
 .mobile {
   display: inline;
 }
 
-/* add style fro the desktop class */
+/* styles to hide the desktop class */
 .desktop {
   display: none;
 }
 
-/* styles for the main div */
 main {
-  font-family: Verdana, Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
   margin-top: 0.5em;
   padding: 1em;
-  border-radius: 2em 0 2em 0;
   background-color: #ffffff;
+  border-radius: 2em 0 2em 0;
   opacity: 0.85;
 }
-/* footer styles */
+
 footer {
-  font-size: 0.7em;
+  font-size: .7em;
   text-align: center;
   margin-top: 2em;
-  color: #ffffff;
+  color: #fff;
 }
 
-/* styles for anchor tag in main element */
+/* style for the links inside main */
 main a {
-  background-color: #9d9d93;
   border-radius: 1em;
-  padding: 0.5em;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
+  padding: 0.5em;
+  background-color: #9d9d93;
   text-decoration: none;
 }
 
-/* styles for anchor tag in footer */
+/* style for the links in the footer */
 footer a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
-/* styles for teh tablet class */
+
+/* styles for the tablet class */
 .tablet {
   display: none;
 }
 
-/* styles for teh equip class */
 .equip {
+  /* float: left;
+  padding: 0 20px 20px; */
   display: none;
 }
 
-/* styles for the input, textarea, select */
-input, textarea, select {
+/* style for the aside element */
+aside {
+  font-style: italic;
+}
+
+/* style for input, textearea etc */
+input,
+select,
+textarea {
   display: block;
   margin-bottom: 1em;
 }
 
-/* styles for the label */
+/* style for the label */
 label {
   display: block;
 }
 
-/* styles for the ul in the form */
+/* styel for the ul inside the form */
 form ul {
   list-style-type: none;
 }
 
-/* styles for the chkbx class */
 .chkbx {
   display: inline-block;
 }
 
-/* styles for mobile */
-.video {
-  display: none;
+.gender label {
+  text-align: left;
+  color: #000;
+  width: fit-content;
+  padding-right: 1em;
 }
 
-/* styles for the copyright div */
-#copyright {
-  float: left;
-  margin-top: 2em;
-  width: 80%;
+.gender p {
+  margin: 0;
+  padding-right: 1em;
 }
 
-/* styles for the social div */
-#social {
-  float: right;
-  width: 20%;
+.gender {
+  display: flex;
 }
 
-/* styles for the social media icons */
-/* #social img {
+fieldset section {
+  padding-bottom: 0;
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form fieldset {
   padding: 0.5em;
+}
+
+form p>small {
+  display: block;
+}
+
+#form-btn input {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0.5em 1em;
+  background-color: #9d9d93;
+  border-radius: 1em;
+  color: #fff;
+  border: none;
+}
+
+.gender {
+  flex-direction: column;
+}
+
+.gender>div {
+  flex-direction: row;
+  margin-left: 5em;
+}
+
+/* 
+@media (orientation: landscape) {
+  body {
+      background-color: cyan;
+  }
 } */
 
-/* Media Query for teh tablet view port targets screen only */
-/* minimum width is 481px */
-@media only screen and (min-width: 685px) {
-  /* styles specifies teh horizontal display for the nav li */
+/* media query for the tablet */
+@media only screen and (min-width: 700px) {
+
+  /* styles for li inside nav */
   nav li {
     display: inline;
     float: left;
@@ -167,365 +221,440 @@ form ul {
     background-color: transparent;
   }
 
-  /* styles for the main */
+  /* styles for the main element */
   main {
     clear: left;
     /* margin-top: 4em; */
     border-radius: 0;
+    margin-top: -0.3em;
     overflow: auto;
   }
 
-  /* styles for h1 */
-  h1 {
-    text-align: center;
-  }
-
-  /* styles for images in figure */
-  figure img {
-    background-color: #1d1d1c;
-    display: inline;
-    height: 8em;
-    width: 28%;
-    margin: 1%;
-    padding: 1%
-  }
-
-  /* styles for the anchor tag in the figure */
-  figure a {
-    padding: 0;
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-  /* styles for the mobiole class */
+  /*  hiding mobile class*/
   .mobile {
     display: none;
   }
 
-  /* sektop styles */
+  /* display desktop class */
   .desktop {
-    display: inline;
+    display: block;
   }
 
-  /* styles for the eqiup class */
+  /* display equip class img/content */
   .equip {
     display: inline;
     float: left;
     margin-right: 1.5em;
   }
 
-  /* styles for teh class items */
+  h1 {
+    clear: left;
+    /* text-align: center; */
+  }
+
+  /* style fot the images inside figure */
+  figure img {
+    background-color: #1d1d1c;
+    display: inline;
+    height: 8em;
+    width: calc(100% / 3 - 5%);
+    /* width: 28%; */
+    margin: 1%;
+    padding: 1%;
+  }
+
+  /* style for the links inside the figure */
+  figure a {
+    background-color: transparent;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  /* display items class */
   .items {
     display: block;
     list-style-position: inside;
+    /* margin-bottom: 6em; */
   }
 
-  /* styles for the tablet class */
+  /* display class tablet */
   .tablet {
     display: block;
     margin-top: -3em;
     margin-bottom: -1em;
   }
 
-  /* styles fro the section */
+  dt {
+    font-weight: bold;
+    margin-top: 0.7em;
+  }
+
   section {
     padding-bottom: 3em;
   }
 
-  /* styles for teh h1 in teh section */
+  /* style for the h1 inside the section element */
   section h1 {
     text-align: left;
   }
 
-  /* styles for teh anchor tag inside section */
+  /* style regarding links inside the section element */
   section a {
+    padding: 0;
     background-color: transparent;
     color: #1d1d1c;
     font-weight: normal;
-    padding: 0;
     text-decoration: underline;
   }
 
-  /* styles for the dt */
-  dt {
-    font-weight: bold;
-    margin-top: .7em;
-  }
-
-  /* styles for teh contact class */
+  /* style for the contact class */
   .contact {
     background-color: transparent;
-    padding: 0;
     color: #1d1d1c;
+    padding: 0;
     text-decoration: underline;
+    font-weight: normal;
   }
 
-  /* styles for the article element */
+  /* style for the article element */
   article {
     background-color: #c1d9ca;
     float: left;
     margin: 0.5%;
     padding: 0.5%;
-    text-align: center;
-    width: 31%;
+    /* width: 31%; */
+    width: calc((100% - 6%) / 3);
+    text-align: left;
+    border-radius: 1em;
   }
 
-  /* styles for teh images inside the article */
+  article h2 {
+    margin-left: 1em;
+  }
+
+  /* style for the images inside the articles in main */
   article img {
     border: solid 0.1em #1d1d1c;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* styles for the paragraphs inside the article */
+  /* style for the p inside the articles */
   article p {
-    color: #000000;
     margin-top: 2%;
     padding: 1%;
-    text-align: left;
   }
 
-  /* styles for the ul inside the article */
-  article ul {
-    text-align: left;
-  }
-
-  /* styles for the aside element */
+  /* style for aside element */
   aside {
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 0 5em 5em 5em;
     box-shadow: 1em 1em 1em #4c4f4d;
     padding: 1.5em;
     margin: 1em;
   }
 
-  /* styles for the table */
-  table {
-    border: 0.1em solid #000000;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  fieldset {
+    border: groove;
   }
 
-  /* styles for the th and td */
-  th, td {
-    border: 0.1em solid #000000;
-    padding: 1em;
+  fieldset legend {
+    visibility: visible;
   }
 
-  /* styles for the th */
-  th {
-    background-color: #1d1d1c;
-    color: #ffffff;
-  }
-
-  /* styles for caption */
-  caption {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-  }
-
-  /* styles for the flex-container class */
-  .flex-container {
-    display: flex;
-  }
-
-  /* styles for the label */
+  /* style for the label */
   label {
     float: left;
     padding-right: 0.5em;
+    text-align: right;
+    width: 10em;
+  }
+
+  form ul {
+    text-align: left;
+  }
+
+  .gender p {
     width: 10em;
     text-align: right;
   }
 
-  /* styles for the btn class */
-  .btn {
-    margin-left: 12em;
+  /* style for the btn class */
+  #form-btn:first-of-type {
+    margin-left: 10em;
   }
+
+  form p>small {
+    display: inline;
+    padding-left: 1em;
+  }
+
+  .gender {
+    flex-direction: row;
+  }
+
+  .gender>div {
+    flex-direction: row;
+    margin-left: 0;
+  }
+
+  /* styles for main element with class flex display */
+  /* .flex-container {
+    display: flex;
+  } */
+
+  /* style for the table element */
+  table {
+    border: 0.1em solid #000;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  /* style for the th and tr */
+  th,
+  tr,
+  td {
+    border: 0.1em solid #000;
+    padding: 1em;
+  }
+
+  /* style for th */
+  th {
+    background-color: #1d1d1c;
+    color: #fff;
+  }
+
+  /* style for the caption of the table */
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+  }
+
+  /* styel for the video class */
+  .video {
+    text-align: center;
+    padding: 1em;
+  }
+
+  video {
+    border: 0.5em ridge #fff;
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* style for the copyright id div */
+  #copyright {
+    float: left;
+    margin-top: 2em;
+    width: 80%;
+  }
+
+  #social {
+    float: right;
+    width: 20%;
+  }
+
+  /* footer {
+      display: flex;
+      justify-content: space-between;
+  } */
+
 }
 
-/* Media query for desktop width size */
-@media only screen and (min-width: 860px) {
-  /* styles for teh container div */
+/* media query for the desktop view port */
+@media only screen and (min-width: 900px) {
+
+  /* style for the container id */
   #container {
+    /* width: 80%; */
     background-color: #1d1d1c;
   }
 
-  /* styles for ul in nav */
+  /* styles for the ul inside the nav */
   nav ul {
     margin: 0;
     padding-left: 0.5%;
     padding-right: 0.5%;
   }
 
-  /* styles for teh li in nav */
+  /* styles for the li inside the nav */
   nav li {
+    /* border-radius: 0;
+      border-top: solid #000;
+      border-bottom: solid #000; */
     margin-left: 0;
     margin-right: 0;
     padding: 0;
     width: 20%;
   }
 
-  /* styles for the links in the nav */
+  /* nav li:nth-of-type(3) a {
+      color: #000;
+  } */
+
+  /* styles for the links in the li in nav */
   nav li a {
     display: inline-block;
     padding: 0.7em;
-    text-shadow: 0.2em 0.1em #3d3d35;
+    text-shadow: 0.2em 0.2em 0.1em #3d3d35;
   }
 
-  /* styles for teh main element */
+  /* styles for the main */
   main {
+    border-radius: 0.5em;
+    box-shadow: 0.5em 0.5em 0.5em #404040;
+    margin-bottom: 1em;
+    margin-top: 1em;
     background-color: #1d1d1c;
   }
 
-  /* styles for the paragraphs inside main element */
+  /* paragraphs inside main */
   main p {
-    color: #ffffff;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: #fff;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
   }
 
-  /* styles for teh item class */
-  .items {
-    margin-bottom: 7em;
-  }
-
-  /* styles for h1 in main */
-  /* main h1 {
-    clear: left;
+  /* styles for the item class */
+  /* .items {
+      margin-bottom: 7em;
   } */
 
-  /* adding pseudo class for the links */
-  nav li a:hover {
-    color: #9d9d93;;
-    font-style: italic;
-  }
-
+  /*  styles for the links inside the nav*/
   nav li a:link {
-    color: #ffffff;
+    color: #fff;
   }
 
   nav li a:visited {
-    color: #ccccff;
+    color: #ccf;
   }
 
-  /* styles for the gradients */
+  nav li a:hover {
+    color: #9d9d93;
+    font-style: italic;
+  }
+
+  nav li a:active {
+    color: #660;
+  }
+
   body {
-    background-color: #ffffff;
+    /* background: linear-gradient(135deg, orange 60%, cyan); */
+    /* background: linear-gradient(#fff 60%, #ff9);
+      background-attachment: fixed; */
+    background: #fff;
   }
 
-  /* styles for header */
+  /* style for header of desktop view port */
   header {
-    text-align: left;
+    text-align: right;
   }
 
-  /* styles for teh nav */
+  /* style for the nav */
   nav {
-    float: right;
-    margin-right: 3em;
-    margin-bottom: 0;
-    width: 65%;
+    float: left;
     margin-top: -7em;
+    width: 60%;
   }
 
-  /* styles for images inside figure element */
+  /* style for the img inside the figure */
   figure img {
-    height: 15em;
+    height: 12rem;
     opacity: 0.7;
   }
 
-  /* styles removing transparency */
+  /* pseudo class for the imges inside figure */
   figure img:hover {
     opacity: 1;
+    /* cursor: pointer; */
   }
 
-  /* styles for h1  */
   h1 {
-    color: #ffffff;
+    color: #fff;
+    text-align: center;
   }
 
-  /* styles for the footer */
+  /* style for the footer */
   footer {
     background-color: #2a2a2a;
     margin-top: -0.2em;
-    padding: 2em;
+    /* padding: 2em; */
     overflow: auto;
   }
 
-  /* styles for section */
+
+  /* styles regarding section element */
   section {
-    color: #ffffff;
+    color: #fff;
     margin-left: 1em;
     padding-bottom: 5em;
+    margin-top: 2em;
   }
 
-  /* styles for teh anchor tag inside section */
+  section:first-of-type {
+    margin-top: 0;
+  }
+
   section a {
-    color: #ffffff;
+    color: #fff;
   }
 
-  /* styles for tha paragraphs in section */
   section p {
     margin-left: 0;
   }
 
-  /* styles for the main heading h2 */
   main h2 {
-    color: #ffffff;
+    color: #fff;
   }
 
-  /* styles for the contact */
   .contact {
-    color: #ffffff;
+    color: #fff;
   }
 
-  /* styles for the h2 in article main */
+  /* style for the h2 inside the article */
   main article h2 {
-    color: #000000;
+    color: #000;
+    text-align: center;
   }
 
   article p {
-    color: #000000;
+    color: #000;
   }
 
-  /* styles for the table */
-  table {
-    background-color: #ffffff;
-    width: 85%;
-  }
-
-  /* styles for the caption */
-  caption {
-    color: #ffffff;
-  }
-
-  /* styles for the form element */
+  /* style for the form */
   form {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 1em;
+    margin: 1em;
   }
 
-  /* styles for paragraphs in form */
   form p {
-    color: #000000;
-    margin-left: inherit;
+    color: #000;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
   }
 
-  /* styles for the video */
-  .video {
-    padding: 1em;
-    text-align: center;
-    display: block;
+  /* style for the table  */
+  table {
+    background-color: #fff;
+    width: 80%;
   }
 
-  /* styles for the video tag */
-  video {
-    border: 0.5em ridge #ffffff;
-    height: auto;
-    max-width: 100%;
+  /* style for the tabel caption */
+  caption {
+    color: #fff;
   }
 
+  /* style for the social  */
+  #social img {
+    padding: 0.5em;
+  }
 }

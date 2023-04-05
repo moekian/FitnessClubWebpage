@@ -1,101 +1,114 @@
 <!DOCTYPE html>
+<!-- this is a template for the web pages -->
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness Club</title>
 </head>
+
 <body>
-
   <div id="container">
-    <!-- a section for the headings of the webpage and logo -->
+    <!-- this is the area that is used for the website name and logo -->
     <header>
-      <a href="index.html"><img src="images/ffc_logo.png" alt="Fitness Club Logo"></a>
-    </header>
 
-    <!-- navigation section of the webpage
-    use this area to add links to other pages-->
+      <a href="index.html"><img src="images/ffc_logo.png" alt="the club logo"></a>
+
+    </header>
+    <!-- the area used for the hyperlinks -->
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="class.html">Classes</a></li>
-        <li><a href="nutrition.html">Nutrition</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="index.html">Home </a></li>
+        <li><a href="about.html">About Us </a></li>
+        <li><a href="classes.html">Classes </a></li>
+        <li><a href="nutrition.html">Nutrition </a></li>
+        <li><a href="contact.html">Contact Us </a></li>
       </ul>
     </nav>
-
-    <!--  the main content of the web page-->
+    <!-- the area used for the content of the page -->
     <main>
       <h2>Ready to get started? Contact us today.</h2>
       <h2>Complete the form below to begin your free trial!</h2>
       <form>
-        <label for="fName">First Name:</label>
-        <input type="text" name="fName" id="fName">
-        <label for="lName">Last Name:</label>
-        <input type="text" name="lName" id="lName">
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email">
-        <label for="phone">Phone:</label>
-        <input type="tel" name="phone" id="phone">
+        <fieldset>
+          <legend>Please fill the following form</legend>
 
-        <p>I would like more information about:</p>
-        <ul>
-          <li><input type="checkbox" name="grpft" id="grpft" value="grpft" class="chkbx">Group Fitness</li>
-          <li><input type="checkbox" name="prtrain" id="prtrain" value="prtrain" class="chkbx">Personal Training</li>
-          <li><input type="checkbox" name="nutr" id="nutr" value="nutr" class="chkbx">Nutrition</li>
-        </ul>
+          <label for="fName">First Name:</label>
+          <input type="text" name="fName" id="fName">
+          <label for="lName">Last Name:</label>
+          <input type="text" name="lName" id="lName">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
 
-        <label for="reference">Referral Source:</label>
-        <select name="reference" id="reference">
-          <option value="ad">Advertisement</option>
-          <option value="friend">Friend</option>
-          <option value="google">Google</option>
-          <option value="social">Social</option>
-          <option value="other">Other</option>
-        </select>
+          <p>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              style="display: inline-block;">
+            <small>Format: 123-456-7890</small>
+          </p>
+          <section class="gender">
+            <p>Gender:</p>
+            <div class="gender"><input type="radio" name="gender" id="female" value="female" class="radio"><label
+                for="female">Female</label></div>
+            <div class="gender"><input type="radio" name="gender" id="male" value="male" class="radio"><label
+                for="male">Male</label></div>
+          </section>
+          <p>I woudl like to receive information about: </p>
+          <ul>
+            <li><input type="checkbox" name="grpft" value="grpft" class="chkbx" id="grpft">Group Fitness
+            </li>
+            <li><input type="checkbox" name="prtrain" id="prtrain" value="prtrain" class="chkbx">Personal
+              Training</li>
+            <li><input type="checkbox" name="nutr" id="nutr" value="nutr" class="chkbx">Nutrition</li>
+          </ul>
+          <label for="reference">Referal Source:</label>
+          <select name="reference" id="reference">
+            <option value="ad">Advertisement</option>
+            <option value="friend">Friend</option>
+            <option value="google">Google</option>
+            <option value="social">Social</option>
+            <option value="other" selected>Other</option>
+          </select>
+          <label for="question">Question?</label>
+          <textarea name="question" id="question" cols="25" rows="3"></textarea>
 
-        <label for="questions">Questions?</label>
-        <textarea name="questions" rows="3" cols="25"></textarea>
-
-        <input type="submit" id="submit" class="btn" value="Submit" onclick="tyAlert()">
-        <input type="reset" id="reset" class="btn" value="Reset">
-
+          <div id="form-btn">
+            <input type="submit" id="submit" class="btn" value="Submit" onclick="tyAlert()">
+            <input type="reset" id="reset" class="btn" value="Reset">
+          </div>
+        </fieldset>
       </form>
       <p>We are located at: <br>
-        25437 Bloom Court <br>
+        34334 Bloom court <br>
         Locket, GA 65524
       </p>
 
-      <p>
-        Phone Number
+      <p>Phone Number</p>
+      <p><a class="mobile" href="tel:8145559608">(814)555-9608</a>
+        <span class="desktop">(814)555-9608</span>
       </p>
-      <p>
-        <a class="mobile" href="tel:8145559608">(814) 555-9608</a><span class="desktop">(814) 555-9608</span>
-      </p>
-      <p>
-        Email Address
-      </p>
-      <p>
-        <a href="mailto:forwardfitness@club.net" class="contact">forwardfitness@club.net</a>
-      </p>
+      <p>Email Address</p>
+      <p><a class="contact" href="mailto:fitness@club.com">fitness@club.com</a></p>
     </main>
-
-    <!-- footer section for the copyright and links to social medias -->
+    <!-- the area for the footer content -->
     <footer>
       <div id="copyright">
-        <p><!-- &#169; copyright symbol html entity number -->
-        &copy; Copyright 2020. All Rights Reserved. <br>
-        <a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+        <p>
+          &copy; Copyright 2021. All Rights Rederved <br>
+          <a href="mailto:fitness@club.com">fitness@club.com</a>
+        </p>
       </div>
       <div id="social">
         <p>Connect with us in</p>
-        <p><a href=""><img src="images/fblogo.png" alt="facebook logo"></a></p>
-        <p><a href=""><img src="images/twitterlogo.png" alt="twitter logo"></a></p>
+        <p><a href="#"><img src="images/fblogo.png" alt="facebook logo image"></a></p>
+        <p><a href="#"><img src="images/twitterlogo.png" alt="twitterlogo image"></a></p>
       </div>
     </footer>
   </div>
-<script type="text/javascript" src="scripts/myFunctions.js"></script>
+  <script src="script/myFunctions.js"></script>
 </body>
+
 </html>
